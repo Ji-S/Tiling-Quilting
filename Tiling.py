@@ -1,5 +1,4 @@
 import tensorflow as tf
-import math
 
 def tiling(latent_features, f_ch, factor):
 ## Ex) VGG Pool1 : 112 x 112 x 64 --> 224 x 224 x 16, factor : 2 
