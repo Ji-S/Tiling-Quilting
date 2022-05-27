@@ -24,5 +24,4 @@ def detiling(latent_features, factor, shape):
     features = tf.reshape(features,[batch,factor*factor,f_height,f_width,ch])
     features = tf.transpose(features,[0,2,3,1,4])
     features = tf.reshape(features,[batch,f_height,f_width,f_ch])
-    decode_feature = features
-    return decode_feature
+    return features
